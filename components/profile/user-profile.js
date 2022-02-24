@@ -6,21 +6,21 @@ import ProfileForm from './profile-form';
 import classes from './user-profile.module.css';
 
 function UserProfile() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    getSession().then(session => {
-      if (!session) {
-        window.location.href = "/auth"
-      }
-      else {
-        setIsLoading(false)
-      }
-    })
-  }, [])
-  if (isLoading) {
-    return <p className={classes.profile}>loading...</p>
-  }
+  // useEffect(() => {
+  //   getSession().then(session => {
+  //     if (!session) {
+  //       window.location.href = "/auth"
+  //     }
+  //     else {
+  //       setIsLoading(false)
+  //     }
+  //   })
+  // }, [])
+  // if (isLoading) {
+  //   return <p className={classes.profile}>loading...</p>
+  // }
 
   return (
     <section className={classes.profile}>
